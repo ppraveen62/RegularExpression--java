@@ -1,0 +1,80 @@
+Regular Expressions
+
+A regular expression is an API used to define a pattern for searching or manipulating strings.
+Regular expression is widely used to define the constraint on strings like password and email validation.
+
+Pattern Class:
+--------------
+This class is a compilation of regular expressions that can be used to define various types of patterns, providing no public constructors.
+
+This can be created by invoking the compile() method which accepts a regular expression as the first argument, thus returns a pattern after execution.
+
+Matcher class:
+--------------
+This object is used to perform match operations for an input string in Java.
+
+
+
+
+
+Patterns
+Description
+abc
+This sequence should be followed exactly
+[abc]
+Any one letter from a, b, or c should match
+[^abc]
+Any letter other than these three should match
+[a-z]
+Any letter from a to z can be present in the sequence
+[a-zA-z0-9]
+Any letter from a to z or A to Z or any digit from 0 to 9 can be in the sequence
+.
+Any character other than the line terminator can be in the sequence
+^
+To check if any character is present at the beginning of a line
+$
+To check if any character is present at the end of a line
+\b
+To verify if any character is present at the word boundary or not
+\B
+To verify that no character is present at the word boundary
+\G
+To check that the character is present at the end of the previous match
+Here are some matching patterns used in a regular expression.
+
+
+Meta Characters
+The meta-characters have predefined meanings and are used to make easier use of patterns.
+Patterns
+Description
+\d
+A digit [0-9]
+\D
+A non-digit[^0-9]
+\s
+A whitespace character
+\S
+A non-whitespace character
+\w
+A word character
+\W
+A non-word character[^\w]
+
+
+Quantifiers
+A quantifier defines how often an element can occur.
+Patterns
+Description
+*
+Occurs zero or more times
++
+Occurs one or more times
+?
+Occurs no or one time
+{X}
+Occurs X number of times
+{X,Y}
+Occurs between X and Y times
+*?
+It tries to find the smallest match. This makes the regular expression stop at the first match
